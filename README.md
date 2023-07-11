@@ -1,57 +1,59 @@
 ## Description
 
-Work Day Scheduler will allow anyone to create hourly events/appointment every single day and be able to look back 
+Work Day Scheduler will allow anyone to create hourly events/appointment for a single day within a normal work shift (9am-5pm) and save them into the site for reference. Colors of the hour blocks will help represent the current time of the day, hours/events that have past, and upcoming events that have been saved.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+The site uses starter code provided by UTA with Bootstrap to create the simple layout, while I've written the Javascript file with JQuery and Day.js to create the interactive capabilities.
 
-
-## Installation
-
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+### Task Completed
+- Used Day.js to:
+    - Apply the current day at top of the page
+    - Match the hour block to the current time of the day
+- Used localstorage to save text entered and keep displaying
+- Boostrap to create the layout and styling
+- Used JQuery to create the functions within JavaScript
+    - Along with Day.js, Bootstrap, and JQuery created the colored blocks to represent the past, present, and future hours within the work shift.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+Work Day Schedule is a simple tool to save events and appointments by hour blocks. To use:
+1. Type in an appointment, task, or event within one of the text areas with the desired hour.
+2. Each hour block is matching to the current hour of the day within a normal work shift (9am-5pm). Grey = Past | Red = Present | Green = Future/Upcoming
+2. Press the save button and an alert will appear near the top that text was saved.
+3. The text entry will stay on the page even if refreshed!
+4. Next day replace any previous events with task of the current day and do it all over again!
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+![Work Day Scheduler webpage](./assets/images/work-day-scheduler.png)
+
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+Starter Code provided by University of Texas, Austin.
+Bootstrap v.5.1.3
+FontAwesome v.5.8.1
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+MIT License
+
+Copyright (c) 2023 Annie McElroy
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 ---
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
