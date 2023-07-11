@@ -15,7 +15,7 @@ The site uses starter code provided by UTA with Bootstrap to create the simple l
 
 ## Usage
 
-Work Day Schedule is a simple tool to save events and appointments by hour blocks. To use:
+[Work Day Schedule](https://annie-mcelroy.github.io/work-day-scheduler/) is a simple tool to save events and appointments by hour blocks. To use:
 1. Type in an appointment, task, or event within one of the text areas with the desired hour.
 2. Each hour block is matching to the current hour of the day within a normal work shift (9am-5pm). Grey = Past | Red = Present | Green = Future/Upcoming
 2. Press the save button and an alert will appear near the top that text was saved.
@@ -28,9 +28,11 @@ Work Day Schedule is a simple tool to save events and appointments by hour block
 
 ## Credits
 
-Starter Code provided by University of Texas, Austin.
-Bootstrap v.5.1.3
-FontAwesome v.5.8.1
+- Starter Code provided by University of Texas, Austin.
+- Bootstrap v.5.1.3
+- FontAwesome v.5.8.1
+- JQuery v3.4.1
+- Day.js v1.11.3
 
 ## License
 
