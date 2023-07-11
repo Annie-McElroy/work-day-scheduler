@@ -14,8 +14,7 @@ $(function () {
     var txtValue = $(this).parent().find('.description').val();
     localStorage.setItem(keyTime, txtValue);
 
-    var displaySave = $("#displaySave");
-    displaySave.text("Your event has been saved!")
+    $("#displaySave").text("Your event has been saved!")
   });
 
 
@@ -26,7 +25,7 @@ $(function () {
   // useful when saving the description in local storage?
   //
 
-  var currentHr = dayjs().format('H');
+  var currentHr = dayjs().format('HH');
   
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
@@ -37,15 +36,16 @@ $(function () {
 
   $(".time-block").each(function() {
     var displayHr = $(this).attr('id').split('-')[1];
-
+    console.log(displayHr)
+    console.log(currentHr)
     
-    if (displayHr < currentHr) {
-      $(this).find('.description').addClass('past');
-    } else if (displayHr === currentHr) {
+    if (displayHr === currentHr) {
       $(this).find('.description').addClass('present');
+    } else if (displayHr < currentHr) {
+      $(this).find('.description').addClass('past');
     } else {
       $(this).find('.description').addClass('future');
-    }
+    };
     
     
     // TODO: Add code to get any user input that was saved in localStorage and set
@@ -57,7 +57,7 @@ $(function () {
     var displayTxt = $(this).find('.description');
     displayTxt.val(txtVal);
 
-  })
+  });
 
   // TODO: Add code to display the current date in the header of the page.
 
